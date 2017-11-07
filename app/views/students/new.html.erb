@@ -1,1 +1,10 @@
 <!-- Create your form here -->
+<!-- form_tag(url_for_options = {}, options = {}, &block) public -->
+<h1>Student Form</h1>
+<%= form_tag '/index' %>
+  <%= label_tag ("First name") %>
+  <!-- text_field_tag(name, value = nil, options = {}) public -->
+  <%= text_field_tag 'first_name' %>
+  <%= label_tag 'Last name' %>
+  <%= text_field_tag 'last_name' %>
+  <%= submit_tag 'Submit Student' %>
